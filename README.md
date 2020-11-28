@@ -3,7 +3,7 @@
  This fork adds an implementation for this hook, that shows the measurements of all temperature sensors.
  While default graph does not support displaying these, yet, you can use [OctoPrint-PlotlyTempGraph](https://github.com/jneilliii/OctoPrint-PlotlyTempGraph) to view them.
 
- Installation: 
+## Installation: 
  Open Plugin Manager and install from this Url:
  
  ```https://github.com/Dak0r/OctoPrint-Enclosure-with-Custom-Graphs/archive/master.zip```
