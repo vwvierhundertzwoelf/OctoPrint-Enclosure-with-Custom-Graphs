@@ -1878,6 +1878,15 @@ class EnclosurePlugin(octoprint.plugin.StartupPlugin, octoprint.plugin.TemplateP
                     comm_instance._log("Setting TEMP/HUM control output %s to value %s" % (index_id, set_value))
                     return
 
+    def get_graph_data(self, comm, parsed_temps):
+        for sensor in list(filter(lambda item: item['input_type'] == 'temperature_sensor', self.rpi_inputs)):
+            parsed_temps[str(sensor["label"])+" Temp"] = (sensor['temp_sensor_temp'], None)
+            parsed_temps[str(sensor["label"])+" Humidity"] = (sensor['temp_sensor_humidity'], None)
+
+        return parsed_temps
+
+
+
 
 __plugin_name__ = "Enclosure Plugin"
 __plugin_pythoncompat__ = ">=2.7,<4"
@@ -1890,5 +1899,6 @@ def __plugin_load__():
     global __plugin_hooks__
     __plugin_hooks__ = {
         "octoprint.comm.protocol.gcode.queuing"       : __plugin_implementation__.hook_gcode_queuing,
-        "octoprint.plugin.softwareupdate.check_config": __plugin_implementation__.get_update_information
+        "octoprint.plugin.softwareupdate.check_config": __plugin_implementation__.get_update_information,
+        "octoprint.comm.protocol.temperatures.received": (__plugin_implementation__.get_graph_data, 1)
     }
