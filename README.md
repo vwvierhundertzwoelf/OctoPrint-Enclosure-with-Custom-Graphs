@@ -1,5 +1,6 @@
 # Enclosure Plugin with Support for Custom Graphs
  Ocotoprint allows plugins to define custom temperature values using the ```octoprint.comm.protocol.temperatures.received```-hook.
+ 
  This fork adds an implementation for this hook, that shows the measurements of all temperature sensors.
  While default graph does not support displaying these, yet, you can use [OctoPrint-PlotlyTempGraph](https://github.com/jneilliii/OctoPrint-PlotlyTempGraph) to view them.
 
