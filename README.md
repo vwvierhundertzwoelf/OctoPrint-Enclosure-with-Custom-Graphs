@@ -5,9 +5,10 @@
 
  Installation: 
  Open Plugin Manager and install from this Url:
+ 
  ```https://github.com/Dak0r/OctoPrint-Enclosure-with-Custom-Graphs/archive/master.zip```
 
-# Original Readme
+# Original OctoPrint-Enclosure Readme
 
 Find the plugin useful? Buy me a coffee
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/VitorHenrique/2)
