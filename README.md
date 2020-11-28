@@ -3,6 +3,15 @@
  
  This fork adds an implementation for this hook, that shows the measurements of all temperature sensors.
  While default graph does not support displaying these, yet, you can use [OctoPrint-PlotlyTempGraph](https://github.com/jneilliii/OctoPrint-PlotlyTempGraph) to view them.
+ 
+## Note:
+If you...
+* updated from a different Enclousre plugin version
+* added a sensor to the Enclosure plugin
+* made changes to an existing sensor
+
+then please **Restart Octoprint** or **reboot your pi** to make the custom graphs / changes show up.
+
 
 ## Installation: 
  Open Plugin Manager and install from this Url:
