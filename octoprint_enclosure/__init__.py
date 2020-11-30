@@ -1881,7 +1881,7 @@ class EnclosurePlugin(octoprint.plugin.StartupPlugin, octoprint.plugin.TemplateP
     def get_graph_data(self, comm, parsed_temps):
         for sensor in list(filter(lambda item: item['input_type'] == 'temperature_sensor', self.rpi_inputs)):
             if sensor["show_graph_temp"]:
-                parsed_temps[str(sensor["label"])+" Temp"] = (sensor['temp_sensor_temp'], None)
+                parsed_temps[str(sensor["label"])] = (sensor['temp_sensor_temp'], None)
             if sensor["show_graph_humidity"]:
                 parsed_temps[str(sensor["label"])+" Humidity"] = (sensor['temp_sensor_humidity'], None)
 
