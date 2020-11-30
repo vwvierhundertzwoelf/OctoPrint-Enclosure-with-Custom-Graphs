@@ -629,6 +629,18 @@
         </label>
         <span class="help-inline">Choose if you want to work with Celsius or Fahrenheit</span>
       </div>
+      <div class="controls">
+		<label class="checkbox">
+				<input type="checkbox" data-bind="checked: show_graph_temp"> {{ _('Show Temperature in Graph') }}
+			</label>
+			<span class="help-inline">Check to show temperature value of this sensor in the temperature graph. <i>Only works with <a href="https://github.com/jneilliii/OctoPrint-PlotlyTempGraph" target="_blank">Octoprint-PlotlyTempGraph Plugin</a></i></span>
+		</div>
+		<div class="controls">
+			<label class="checkbox">
+				<input type="checkbox" data-bind="checked: show_graph_humidity"> {{ _('Show Humidity in Graph') }}
+			</label>
+			<span class="help-inline">Check to show humidity value of this sensor in the temperature graph. <i>Only works with <a href="https://github.com/jneilliii/OctoPrint-PlotlyTempGraph" target="_blank">Octoprint-PlotlyTempGraph Plugin</a></i></span>
+		</div>
     </div>
     <!-- /ko -->
     <!-- ko if: ($data.input_type() == "gpio")  -->
