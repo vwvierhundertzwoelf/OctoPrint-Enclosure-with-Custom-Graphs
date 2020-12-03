@@ -9,8 +9,7 @@
 
 
 ### Known Issue
-If Graphs don't show up, please restart Octorpint (not your pi). Also might must use the "Connect Printer on Startup" functionality.
-We are working on this.
+If Graphs don't show up, please restart Octorpint (not your pi). Also you might have to use the "Connect Printer on Startup" functionality for Graphs to show up properly. We are working on this.
 
 
 ### Installation: 
