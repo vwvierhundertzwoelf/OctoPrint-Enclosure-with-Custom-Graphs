@@ -2,22 +2,18 @@
  Ocotoprint allows plugins to define custom temperature values using the ```octoprint.comm.protocol.temperatures.received```-hook.
  
  This fork adds an implementation for this hook, that shows the measurements of all temperature sensors.
- While default graph does not support displaying these, yet, you can use [OctoPrint-PlotlyTempGraph](https://github.com/jneilliii/OctoPrint-PlotlyTempGraph) to view them.
+ While the default graph does not support displaying these, yet, you can use [OctoPrint-PlotlyTempGraph](https://github.com/jneilliii/OctoPrint-PlotlyTempGraph) to view them.
  
- ## Before switching from the official Enclouse Version...
+ ### Before switching from the official Enclouse Version...
  You **must** remove all temperature sensors from your enclouse config and add them again, once you have installed the version from this fork!
 
 
-## Note:
-If you...
-* updated from a different Enclousre plugin version
-* added a sensor to the Enclosure plugin
-* made changes to an existing sensor
-
-then please **Restart Octoprint** or **reboot your pi** to make the custom graphs / changes show up.
+### Known Issue
+If Graphs don't show up, please restart Octorpint (not your pi). Also might must use the "Connect Printer on Startup" functionality.
+We are working on this.
 
 
-## Installation: 
+### Installation: 
  Open Plugin Manager and install from this Url:
  
  ```https://github.com/Dak0r/OctoPrint-Enclosure-with-Custom-Graphs/archive/master.zip```
