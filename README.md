@@ -7,15 +7,12 @@
  ### Before switching from the official Enclouse Version...
  You **must** remove all temperature sensors from your enclouse config and add them again, once you have installed the version from this fork!
 
-
-### Known Issue
-If Graphs don't show up, please restart Octorpint (not your pi). Also you might have to use the "Connect Printer on Startup" functionality for Graphs to show up properly. We are working on this.
-
-
 ### Installation: 
  Open Plugin Manager and install from this Url:
  
  ```https://github.com/Dak0r/OctoPrint-Enclosure-with-Custom-Graphs/archive/master.zip```
+
+------------------------------------------------
 
 # Original OctoPrint-Enclosure Readme
 
