@@ -4,12 +4,11 @@
  This fork adds an implementation for this hook, that shows the measurements of all temperature sensors.
  While the default graph does not support displaying these, yet, you can use [OctoPrint-PlotlyTempGraph](https://github.com/jneilliii/OctoPrint-PlotlyTempGraph) to view them.
  
- ### Before switching from the official Enclouse Version...
- You **must** remove all temperature sensors from your enclouse config and add them again, once you have installed the enclosure version from this fork!
- That is because I added new settings for each sensor (if it should be displayed in the graph or not) and this causes existing configs to be incompatible with this fork. If someone knows how to avoid this, fell free to reach out to me.
 
 ### Installation: 
- Open Plugin Manager and install from this Url:
+*Note: If you already have an enclosure verison installed, you can simply upgrade to this fork with the URL below, without removing your current version or settings!*
+
+Open Plugin Manager and install from this Url:
  
  ```https://github.com/Dak0r/OctoPrint-Enclosure-with-Custom-Graphs/archive/master.zip```
 
