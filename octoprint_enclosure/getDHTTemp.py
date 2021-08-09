@@ -16,7 +16,7 @@ else:
 dht_device = adafruit_dht.DHT22(D2)
 
 read_attempts = 0
-while read_attempts < 7: # try for a reading 7 times since dht's are unreliable
+while read_attempts < 15: # try for a reading 7 times since dht's are unreliable
        try:
                humidity = dht_device.humidity
                temperature = dht_device.temperature
