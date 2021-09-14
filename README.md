@@ -1,4 +1,4 @@
-# Enclosure Plugin with Support for Custom Graphs
+# Enclosure Plugin with Support for Custom Graphs with new DHT22 implementation
  Ocotoprint allows plugins to define custom temperature values using the ```octoprint.comm.protocol.temperatures.received```-hook.
  
  This fork adds an implementation for this hook, that shows the measurements of all temperature sensors.
@@ -48,7 +48,7 @@ Check pictures on thingiverse: http://www.thingiverse.com/thing:2245493
 
 **Software**
 
-Install the plugin using the Plugin Manager bundled with OctoPrint, you can search for the Enclosure plugin or just use the url: https://github.com/vitormhenrique/OctoPrint-Enclosure/archive/master.zip.
+Install the plugin using the Plugin Manager bundled with OctoPrint, you can search for the Enclosure plugin or just use the url: https://github.com/vwvierhundertzwoelf/OctoPrint-Enclosure/archive/master.zip.
 
 To control the enclosure temperature or get temperature triggered events, you need to install and configure a temperature sensor. This plugin can support DHT11, DHT22, AM2302, DS18B20, SI7021, BME280 and TMP102 temperature sensors.
 
